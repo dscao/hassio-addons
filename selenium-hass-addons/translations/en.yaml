@@ -1,0 +1,10 @@
+configuration:
+  phoneNumber:
+    name: 手机号码
+    description: 请输入你在网上国网注册的手机号
+  password:
+    name: 密码
+    description: 请输入网上国网密码 
+  logLevel:
+    name: 日志level
+    description: 默认为INFO
