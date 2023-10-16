@@ -1,0 +1,23 @@
+{
+  "name": "wechatbot-webhook",
+  "version": "v2.1.0",
+  "slug": "wechatbot-webhook",
+  "description": "wechatbot-webhook",
+  "url": "https://github.com/dscao/hassio-addons/blob/main/wechatbot-webhook",
+  "image": "dscao/addon-wechatbot-webhook-{arch}",
+  "arch": ["amd64"],
+  "startup": "application",
+  "boot": "auto",
+  "init": false,  
+  "webui": "http://[HOST]:[PORT:3001]/login?token=login_api_token",
+  "ports": {
+    "3001/tcp": "3001"
+  },
+  "options": {
+    "login_api_token": "abcdefg123"
+  },
+  "schema": {
+    "recvd_msg_api": "url?",
+    "login_api_token": "str?"
+  }
+}
