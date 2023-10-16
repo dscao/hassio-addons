@@ -1,5 +1,5 @@
 name: "selenium_electricity"
-version: "1.5.2"
+version: "v1.5.2"
 slug: selenium_electricity
 description: "Make sgcc electricity data available in HA"
 arch:
