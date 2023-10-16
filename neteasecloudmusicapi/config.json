@@ -9,7 +9,7 @@
   "boot": "auto",
   "init": false,
   "webui": "http://[HOST]:[PORT:3000]",
-  "image": "dscao/addon-neteasecloudmusicapi-{arch}:v4.13.3",
+  "image": "dscao/addon-neteasecloudmusicapi-{arch}",
   "ports": {
     "3000/tcp": "3000"
   }
