@@ -13,4 +13,4 @@ schema:
   phoneNumber: str
   password: str
   logLevel: list(DEBUG|INFO|WARNING|ERROR|FATAL)?
-image: dscao/sgcc_electricity
+image: dscao/addon-sgcc-electricity-{arch}
