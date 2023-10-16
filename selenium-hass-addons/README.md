@@ -14,13 +14,12 @@ ha的加载项仓库(Repo)添加：https://github.com/dscao/hassio-addons \
 2. 增加电量数据的最后日期
 
 ## v1.4 更新日志
-
 增加本月用电量属性、欠费金额属性 
 
 ## v1.3 更新日志
-
 增加电费属性 是否结清 
 
+------以下为原项目内容-----
 
 ## v1.1 更新日志
 
@@ -46,11 +45,6 @@ ha的加载项仓库(Repo)添加：https://github.com/dscao/hassio-addons \
 ```bash
 docker pull dscao/sgcc_electricity
 ```
-
-
-### 3. 直接部署--适用于适用core部署HA的朋友
-
-使用core的朋友已经脱离新手阶段了，所以此处就不写说明啦~
 
 ---------------------------------
 
@@ -207,26 +201,4 @@ docker run --name sgcc_electricity -d -e PHONE_NUMBER="" -e PASSWORD="" -e HASS_
 由于这个镜像较大（docker image约1.17GB），过程较慢。
 
 部署container成功后稍等1分钟，你就可以在HA中找到本说明开篇写的实体了。
-
-### 使用方法三：直接部署
-
-__如果你宿主机是ubuntu，centos, debian等linux操作系统，底层C库是glibc等manylinux tag可兼容的，你可以直接在宿主机上部署本应用（如果底层C库是musl（如alpine OS）, 需要先自行编译onnxruntime）__
-
-首先安装本项目依赖，可参考：
-
-```bash
-pip3 install selenium==4.5.0, schedule==1.1.0, ddddocr==1.4.7, undetected_webdriver==3.1.6
-apt-get install jq chromium chromium-driver -y 
-```
-
-将文件解压后，执行python脚本即可。可根据需求自行将其设置为开机自启动或是跟随HA自启动。
-
-```shell
-cd sgcc_electricity
-nohup python3 main.py --PHONE_NUMBER= --PASSWORD= --HASS_URL= --HASS_TOKEN= &
-```
-
-### 其他
-
-如果你是以core的方式部署的HA，你还可以自己改改，搞一个自定义集成。
 
