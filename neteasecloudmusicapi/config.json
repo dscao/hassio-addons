@@ -4,7 +4,7 @@
   "slug": "neteasecloudmusicapi",
   "description": "网易云音乐 Node.js API service",
   "url": "https://github.com/dscao/hassio-addons/blob/main/neteasecloudmusicapi",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "arch": ["amd64"],
   "startup": "application",
   "boot": "auto",
   "init": false,
