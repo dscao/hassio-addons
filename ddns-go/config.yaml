@@ -1,0 +1,28 @@
+---
+name: DDNS-GO
+version: v5.6.3
+slug: ddns-go
+description: 简单好用的DDNS。自动更新域名解析到公网IP(支持阿里云、腾讯云、Dnspod、Cloudflare、Callback、华为云、百度云、Porkbun、GoDaddy、Google Domain)
+url: https://github.com/dscao/hassio-addons/tree/master/ddns-go
+image: dscao/{arch}-addon-ddns-go
+advanced: true
+arch:
+  - aarch64
+  - amd64
+hassio_api: true
+hassio_role: manager
+host_network: true
+ingress: true
+ingress_port: 9876
+init: false
+map:
+  - config:rw
+panel_icon: mdi:dns
+panel_title: ddns-go
+ports:
+  9876/tcp: null
+options: 
+  ddnsgo_time_seconds: 300
+schema:
+  ddnsgo_time_seconds: "int(60,)"
+startup: services
