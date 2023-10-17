@@ -5,7 +5,7 @@
   "description": "wechatbot-webhook",
   "url": "https://github.com/dscao/hassio-addons/blob/main/wechatbot-webhook",
   "image": "dscao/addon-wechatbot-webhook-{arch}",
-  "arch": ["amd64"],
+  "arch": ["amd64","aarch64"],
   "startup": "application",
   "boot": "auto",
   "init": false,  
