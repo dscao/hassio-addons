@@ -1,4 +1,4 @@
-# npc Home Assistant add-ons
+# dscao Home Assistant add-ons
 
 This is a collection of Home Assistant add-ons that work with [npc](https://github.com/ehang-io/nps/releases).
 
