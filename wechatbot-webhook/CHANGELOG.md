@@ -1,3 +1,7 @@
+## [v2.2.0] - 2023-10-23
+
+https://github.com/danni-cool/docker-wechatbot-webhook/releases/tag/v2.2.0
+
 ## [v2.1.0] - 2023-10-13
 
 https://github.com/danni-cool/docker-wechatbot-webhook/releases/tag/v2.1.0
