@@ -1,10 +1,10 @@
 {
   "name": "wechatbot-webhook",
-  "version": "v2.1.0",
+  "version": "v2.2.0",
   "slug": "wechatbot-webhook",
   "description": "一个支持消息收发的微信 webhook 机器人",
   "url": "https://github.com/dscao/hassio-addons/blob/main/wechatbot-webhook",
-  "image": "dscao/addon-wechatbot-webhook-{arch}",
+  "image": "dscao/{arch}-addon-wechatbot-webhook",
   "arch": ["amd64","aarch64"],
   "startup": "application",
   "boot": "auto",
