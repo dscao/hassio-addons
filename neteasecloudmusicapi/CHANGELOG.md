@@ -1,3 +1,6 @@
+## [4.13.5] - 2023-10-23
+form https://github.com/Binaryify/NeteaseCloudMusicApi/releases/tag/v4.13.5
+
 ## [4.13.3] - 2023-10-11
 form https://github.com/Binaryify/NeteaseCloudMusicApi/releases/tag/v4.13.3
 
