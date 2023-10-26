@@ -1,15 +1,9 @@
-# TILES-GAODE
+## dscao Home Assistant add-ons
+This is a collection of Home Assistant add-ons that work with npc.
 
-## About
-
-tiles-gaode
-
-高德地图 for traccar
-
-from https://hub.docker.com/r/ryanh7/tiles
-
-在traccar的自定义地图中配置为 \
-http(s)://IP:Port/amap/{z}/{x}/{y}.jpg \
-即可访问， \
-如果traccar是用https访问的， \
-上面这个容器也应该使用https.
+## How to add this add-on repository to your Home Assistant install
+Running the Development Version
+First, follow the tutorial at Tutorial: Making your first add-on to learn how to build a basic addon.
+Use git to clone this repository same addons folder used in the tutorial.
+Make changes to the code, or use git to checkout branches to test.
+Remember to to reload and reinstall the addon to rebuild the Docker containers to see any changes.
