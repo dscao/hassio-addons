@@ -1,8 +1,10 @@
 name: "selenium_electricity"
-version: "v1.5.2"
+version: "2.0.0"
 slug: selenium_electricity
 description: "Make sgcc electricity data available in HA"
 arch: 
+  - amd64
+  - aarch64
 homeassistant_api: true
 options:
   phoneNumber: null
@@ -12,4 +14,4 @@ schema:
   phoneNumber: str
   password: str
   logLevel: list(DEBUG|INFO|WARNING|ERROR|FATAL)?
-image: dscao/addon-sgcc-electricity-{arch}
+image: dscao/{arch}-addon-selenium_electricity
