@@ -3,8 +3,8 @@
 Fork from https://github.com/louisslee/sgcc_electricity (感谢作者）
 
 ## 本 addon 方式
-ha的加载项仓库(Repo)添加：https://github.com/dscao/npc-hass-addons \
-稍后直接安装，编译即可。时间较长，需要ha系统剩余空间大于4.5G。编译完成镜像占用1.17G。
+ha的加载项仓库(Repo)添加：https://github.com/dscao/hassio-addons \
+镜像占用近1G，预留足够磁盘空间。
 
 ##  v2.0.0 更新日志
 修复登录滑块验证方式
