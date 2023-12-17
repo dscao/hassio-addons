@@ -7,7 +7,6 @@ ha的加载项仓库(Repo)添加：https://github.com/dscao/hassio-addons \
 镜像占用近1G，预留足够磁盘空间。
 
 ##  v2.0.0 更新日志
-修复登录滑块验证方式
 感谢 [Electricity-Tracker项目](https://github.com/okatu-loli/Electricity-Tracker/blob/master/scraper/slider_image_process.py)
 
 ##  v1.5.2 更新日志
