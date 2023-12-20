@@ -1,6 +1,6 @@
 {
   "name": "NeteaseCloudMusicApi",
-  "version": "v4.13.7",
+  "version": "v4.14.0",
   "slug": "neteasecloudmusicapi",
   "description": "网易云音乐 Node.js API service",
   "url": "https://github.com/dscao/hassio-addons/blob/main/neteasecloudmusicapi",
