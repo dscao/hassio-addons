@@ -6,8 +6,11 @@ Fork from https://github.com/louisslee/sgcc_electricity (感谢作者）
 ha的加载项仓库(Repo)添加：https://github.com/dscao/hassio-addons \
 镜像占用近1G，预留足够磁盘空间。
 
+##  v2.0.1 更新日志
+优化数据获取流程
+
 ##  v2.0.0 更新日志
-感谢 [Electricity-Tracker项目](https://github.com/okatu-loli/Electricity-Tracker/blob/master/scraper/slider_image_process.py)
+感谢 [Electricity-Tracker项目](https://github.com/okatu-loli/Electricity-Tracker)
 
 ##  v1.5.2 更新日志
 修复8月份后数据抓取数据出错的问题
@@ -42,7 +45,7 @@ ha的加载项仓库(Repo)添加：https://github.com/dscao/hassio-addons \
 然后在webUI上点击配置-》加载项-》加载项商店，如果有升级会显示，直接点击升级即可；如果没有的话，右上角点击检查更新一下。
 
 
-### 2. docker 部署
+### 2. docker 部署（不再更新）
 
 输入以下命令，从github上拉取镜像
 
@@ -196,7 +199,7 @@ __如果你是采用supervised, HAOS方式部署的home-assistant（也就是说
 安装好后，配置好用户名、密码，直接启动即可。稍等1分钟后，就可以在HA中找到本说明开篇写的实体了。
 
 
-### 使用方法二：docker部署
+### 使用方法二：docker部署（不再更新）
 
 __如果你是采用core, docker方式部署的home-assistant（也就是说你没有部署suppervisor, add-on等容器），建议采用docker部署本应用。__
 
