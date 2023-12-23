@@ -1,6 +1,6 @@
 {
   "name": "wechatbot-webhook",
-  "version": "v2.3.3",
+  "version": "v2.4.0",
   "slug": "wechatbot-webhook",
   "description": "一个支持消息收发的微信 webhook 机器人",
   "url": "https://github.com/dscao/hassio-addons/blob/main/wechatbot-webhook",
@@ -9,7 +9,7 @@
   "startup": "application",
   "boot": "auto",
   "init": false,  
-  "webui": "http://[HOST]:[PORT:3001]/login?token=login_api_token",
+  "webui": "http://[HOST]:[PORT:3001]/login?token={login_api_token}",
   "ports": {
     "3001/tcp": "3001"
   },
