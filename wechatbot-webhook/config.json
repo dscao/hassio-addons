@@ -1,6 +1,6 @@
 {
   "name": "wechatbot-webhook",
-  "version": "v2.4.0",
+  "version": "v2.4.1",
   "slug": "wechatbot-webhook",
   "description": "一个支持消息收发的微信 webhook 机器人",
   "url": "https://github.com/dscao/hassio-addons/blob/main/wechatbot-webhook",
