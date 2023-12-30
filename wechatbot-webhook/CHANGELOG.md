@@ -1,3 +1,7 @@
+## [v2.4.2] - 2023-12-30
+
+https://github.com/danni-cool/wechatbot-webhook/releases/tag/v2.4.2
+
 ## [v2.4.1] - 2023-12-25
 
 https://github.com/danni-cool/wechatbot-webhook/releases/tag/v2.4.1
