@@ -1,6 +1,6 @@
 {
   "name": "wechatbot-webhook",
-  "version": "v2.6.0",
+  "version": "v2.6.1",
   "slug": "wechatbot-webhook",
   "description": "一个支持消息收发的微信 webhook 机器人",
   "url": "https://github.com/dscao/hassio-addons/blob/main/wechatbot-webhook",
@@ -13,12 +13,17 @@
     "3001/tcp": "3001"
   },
   "options": {
+    "recvd_msg_api": "",
     "login_api_token": "abcdefg123",
-    "disable_auto_login": false
+    "disable_auto_login": false,
+    "accept_recvd_msg_myself": false,
+    "log_level": "default"
   },
   "schema": {
     "recvd_msg_api": "str?",
     "login_api_token": "str?",
-    "disable_auto_login": "bool"
+    "disable_auto_login": "bool",
+    "accept_recvd_msg_myself": "bool",
+    "log_level": "list(default|quiet|debug)"
   }
 }
