@@ -1,9 +1,8 @@
 name: "selenium_electricity"
-version: "2.0.1"
+version: "2.0.2"
 slug: selenium_electricity
 description: "Make sgcc electricity data available in HA"
 arch: 
-  - aarch64
   - amd64
 homeassistant_api: true
 options:
