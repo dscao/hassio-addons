@@ -6,36 +6,6 @@ Fork from https://github.com/louisslee/sgcc_electricity (感谢作者）
 ha的加载项仓库(Repo)添加：https://github.com/dscao/hassio-addons \
 镜像占用近1G，预留足够磁盘空间。
 
-##  v2.0.1 更新日志
-优化数据获取流程
-
-##  v2.0.0 更新日志
-感谢 [Electricity-Tracker项目](https://github.com/okatu-loli/Electricity-Tracker)
-
-##  v1.5.2 更新日志
-修复8月份后数据抓取数据出错的问题
-
-##  v1.5 更新日志
-1. 修复1月份无年度用电数据抓取数据出错的问题
-2. 增加电量数据的最后日期
-
-## v1.4 更新日志
-
-增加本月用电量属性、欠费金额属性 
-
-## v1.3 更新日志
-
-增加电费属性 是否结清 
-
-
-## v1.1 更新日志
-
-1.适配多个户号（多个户号相关的实体名称、UI配置（如需），见使用说明）
-
-2.增加查看年用电量、电费
-
-3.优化部分已知bug
-
 ---------------------------------
 
 ## 升级指引
