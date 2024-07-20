@@ -19,7 +19,9 @@ webui: "[PROTO:ssl]://[HOST]:[PORT:9876]"
 panel_icon: mdi:dns
 panel_title: ddns-go
 ports:
-  9876/tcp: null
+  9876/tcp: 9876
+ports_description:
+  9876/tcp: Web interface
 options: 
   ddnsgo_time_seconds: 300
 schema:
