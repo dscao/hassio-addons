@@ -1,8 +1,5 @@
 name: Frigate (rknpu)
-version: 0.14.1-rk
-breaking_versions:
-  - 0.14.1-rk
-  - b265b6b-rk
+version: 0.16.1-rk
 panel_icon: "mdi:cctv"
 panel_title: Frigate
 slug: frigate-rknpu
@@ -50,7 +47,6 @@ schema:
 services:
   - "mqtt:want"
 arch:
-  - amd64
   - aarch64
 map:
   - "media:rw"
