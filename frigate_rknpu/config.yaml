@@ -40,6 +40,8 @@ video: true
 full_access: true
 privileged:
   - PERFMON
+devices:
+  - /dev/rknpu:/dev/rk_cec:rw
 environment:
   CONFIG_FILE: /config/frigate.yml
 schema:
