@@ -1,6 +1,6 @@
 # https://github.com/AlexxIT/builder/blob/master/builder.sh
 name: go2rtc-rockchip
-description: Hardware transcoding for Intel (VAAPI) and Raspberry (V4L2)
+description: Hardware transcoding for rockchip
 url: https://github.com/AlexxIT/go2rtc
 image: alexxit/go2rtc
 arch: [aarch64]
