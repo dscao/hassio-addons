@@ -2,21 +2,29 @@ name: Frigate (rknpu)
 version: 0.16.1-rk
 panel_icon: "mdi:cctv"
 panel_title: Frigate
-slug: frigate-rknpu
+slug: 'frigate-rknpu'
 description: NVR with realtime local object detection for IP cameras
 url: "https://github.com/blakeblackshear/frigate"
 image: ghcr.io/blakeblackshear/frigate
-startup: application
-boot: auto
 init: false
+startup: application
+boot: manual
+arch:
+  - aarch64
+map:
+  - "media:rw"
+  - "config:rw"
 webui: "http://[HOST]:[PORT:5000]/"
 watchdog: "http://[HOST]:[PORT:5000]/"
 ingress: true
 ingress_port: 5000
 ingress_entry: /
+panel_icon: "mdi:cctv"
+panel_title: Frigate
 panel_admin: false
 homeassistant_api: true
 hassio_api: true
+hassio_role: manager
 ports:
   8555/tcp: 8555
   8555/udp: 8555
@@ -30,26 +38,33 @@ ports_description:
   8555/udp: WebRTC over udp
   8554/tcp: RTSP Restream
   8971/tcp: Authenticated Web interface
-  5000/tcp: Unauthenticated Web interface (Not required for Hass.io Ingress)
+  5000/tcp: Web interface (Not required for Hass.io Ingress)
   1984/tcp: go2rtc API
   1935/tcp: RTMP streams
 host_network: false
-tmpfs: true
-usb: true
 video: true
+tmpfs: true
+host_ipc: true
+apparmor: true
 full_access: true
 privileged:
+  - BPF
+  - DAC_READ_SEARCH
+  - IPC_LOCK
+  - NET_ADMIN
+  - NET_RAW
   - PERFMON
-devices:
-  - /dev/rknpu:/dev/rk_cec:rw
+  - SYS_ADMIN
+  - SYS_MODULE
+  - SYS_NICE
+  - SYS_PTRACE
+  - SYS_RAWIO
+  - SYS_RESOURCE
+  - SYS_TIME
 environment:
-  CONFIG_FILE: /config/frigate.yml
+  CONFIG_FILE: /config/frigate.yaml
 schema:
   plus_api_key: password?
 services:
   - "mqtt:want"
-arch:
-  - aarch64
-map:
-  - "media:rw"
-  - "config:rw"
+
