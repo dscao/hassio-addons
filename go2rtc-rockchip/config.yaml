@@ -13,8 +13,24 @@ startup: system
 host_network: true
 homeassistant_api: true
 video: true
-audio: true
-ingress: true
+tmpfs: true
+host_ipc: true
+apparmor: true
+full_access: true
+privileged:
+  - BPF
+  - DAC_READ_SEARCH
+  - IPC_LOCK
+  - NET_ADMIN
+  - NET_RAW
+  - PERFMON
+  - SYS_ADMIN
+  - SYS_MODULE
+  - SYS_NICE
+  - SYS_PTRACE
+  - SYS_RAWIO
+  - SYS_RESOURCE
+  - SYS_TIME
 ingress_port: 1984
 panel_icon: mdi:camera-wireless
 map: [ "config:rw", "media", "ssl" ]
